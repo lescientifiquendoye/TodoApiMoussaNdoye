@@ -1,0 +1,23 @@
+services:
+  mongodb:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  api:
+    build:
+      context: ./TodoApiMoussaNdoye
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - MONGODB_URI=mongodb://mongodb:27017
+      - ASPNETCORE_URLS=http://+:8080
+
+volumes:
+  mongo_data:

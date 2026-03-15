@@ -1,0 +1,23 @@
+# Fichiers TP / notes personnelles
+TodoApiMoussaNdoye/projet.txt
+TodoApiMoussaNdoye/todo.md
+
+# Claude Code
+.claude/
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.db
+*.db-shm
+*.db-wal
+
+# Publish
+publish/
+out/
+
+# Secrets
+appsettings.Production.json
