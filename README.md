@@ -228,4 +228,4 @@ En mode Docker, la variable d'environnement `MONGODB_URI` prend la priorité sur
 
 ## Auteur
 
-**Moussa Ndoye** — Étudiant en Génie Informatique, ESP/UCAD
+**Moussa Ndoye** — Étudiant en DI3 Génie Informatique, ESP/UCAD
